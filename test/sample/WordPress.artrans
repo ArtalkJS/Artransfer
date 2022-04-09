@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "rid": "0",
+    "content": "嗨，这是一条评论。\n要开始审核、编辑及删除评论，请访问仪表盘的“评论”页面。\n评论者头像来自<a href=\"https://gravatar.com\">Gravatar</a>。",
+    "ua": "",
+    "is_collapsed": false,
+    "is_pending": false,
+    "created_at": "2022-04-09T09:28:47.000Z",
+    "updated_at": "2022-04-09T09:28:47.000Z",
+    "nick": "一位WordPress评论者",
+    "email": "wapuu@wordpress.example",
+    "link": "https://wordpress.org/",
+    "page_key": "http://10.90.1.130:8099/2022/04/09/hello-world/"
+  },
+  {
+    "id": "2",
+    "rid": "0",
+    "content": "你好！！！评论测试！！",
+    "ua": "",
+    "is_collapsed": false,
+    "is_pending": false,
+    "created_at": "2022-04-09T09:29:32.000Z",
+    "updated_at": "2022-04-09T09:29:32.000Z",
+    "nick": "test",
+    "email": "test@example.com",
+    "link": "http://10.90.1.130:8099",
+    "page_key": "http://10.90.1.130:8099/2022/04/09/hello-world/"
+  },
+  {
+    "id": "3",
+    "rid": "2",
+    "content": "一条回复",
+    "ua": "",
+    "is_collapsed": false,
+    "is_pending": false,
+    "created_at": "2022-04-09T09:29:41.000Z",
+    "updated_at": "2022-04-09T09:29:41.000Z",
+    "nick": "test",
+    "email": "test@example.com",
+    "link": "http://10.90.1.130:8099",
+    "page_key": "http://10.90.1.130:8099/2022/04/09/hello-world/"
+  },
+  {
+    "id": "4",
+    "rid": "0",
+    "content": "评论2",
+    "ua": "",
+    "is_collapsed": false,
+    "is_pending": false,
+    "created_at": "2022-04-09T09:29:44.000Z",
+    "updated_at": "2022-04-09T09:29:44.000Z",
+    "nick": "test",
+    "email": "test@example.com",
+    "link": "http://10.90.1.130:8099",
+    "page_key": "http://10.90.1.130:8099/2022/04/09/hello-world/"
+  },
+  {
+    "id": "5",
+    "rid": "3",
+    "content": "回复2",
+    "ua": "",
+    "is_collapsed": false,
+    "is_pending": false,
+    "created_at": "2022-04-09T09:29:48.000Z",
+    "updated_at": "2022-04-09T09:29:48.000Z",
+    "nick": "test",
+    "email": "test@example.com",
+    "link": "http://10.90.1.130:8099",
+    "page_key": "http://10.90.1.130:8099/2022/04/09/hello-world/"
+  }
+]
