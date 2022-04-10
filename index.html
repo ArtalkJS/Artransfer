@@ -1,13 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Artransfer</title>
+    <link rel="stylesheet" href="/src/ui/main.scss">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main>
+      <header>
+        <h2 class="title">Artransfer</h2>
+        <p class="sub">将评论数据转换为 Artrans</p>
+      </header>
+
+      <div class="workbench">
+        <!-- 源文件 -->
+        <div class="block">
+          <div class="inner">
+            <div class="form-grp">
+              <label>选择格式</label>
+              <select id="srcFormat" class="encoder-list">
+                <option selected disabled value="">-</option>
+              </select>
+            </div>
+            <div class="form-grp">
+              <label>上传文件</label>
+              <input type="file" id="importFile">
+            </div>
+            <!--<div class="form-grp">
+              <div class="desc">
+                提示：导出方法请查阅，
+              </div>
+            </div>-->
+          </div>
+        </div>
+
+        <div class="to-icon"></div>
+
+        <!-- 目标文件 -->
+        <div class="block">
+          <div class="inner">
+            <button class="export-btn" id="exportBtn">下载 Artrans</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script type="module" src="/src/ui/main.ts"></script>
   </body>
 </html>

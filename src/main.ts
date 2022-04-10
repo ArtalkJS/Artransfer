@@ -5,7 +5,7 @@ import ValineEncoder from './encoder/ValineEncoder'
 import WordPressEncoder from './encoder/WordPressEncoder'
 
 export default {
-  encoder: {
+  encoders: {
     CommentoEncoder, DisqusEncoder, TwikooEncoder,
     ValineEncoder, WordPressEncoder,
   }
