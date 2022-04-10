@@ -33,6 +33,13 @@ body.dark-mode {
 }
 
 body.iframe-mode {
+  overflow: hidden;
+  min-height: 520px;
+
+  &:not(.dark-mode) {
+    --bgColor: #fff;
+  }
+
   header {
     display: none;
   }
