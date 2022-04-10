@@ -2,9 +2,10 @@
   "name": "artransfer",
   "version": "0.0.1",
   "license": "GPL-2.0",
+  "main": "dist/Artransfer.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage"

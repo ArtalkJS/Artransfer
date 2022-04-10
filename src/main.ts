@@ -1,6 +1,12 @@
-const app = document.querySelector<HTMLDivElement>('#app')!
+import CommentoEncoder from './encoder/CommentoEncoder'
+import DisqusEncoder from './encoder/DisqusEncoder'
+import TwikooEncoder from './encoder/TwikooEncoder'
+import ValineEncoder from './encoder/ValineEncoder'
+import WordPressEncoder from './encoder/WordPressEncoder'
 
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+export default {
+  encoder: {
+    CommentoEncoder, DisqusEncoder, TwikooEncoder,
+    ValineEncoder, WordPressEncoder,
+  }
+}
