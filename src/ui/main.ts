@@ -1,6 +1,16 @@
 import { Encoder } from '../common';
 import Artransfer from '../main'
 
+// 外观选项
+;(() => {
+  if (window.location.search.includes('iframe')) {
+    document.body.classList.add('iframe-mode')
+  }
+  if (window.location.search.includes('dark')) {
+    document.body.classList.add('dark-mode')
+  }
+})();
+
 // 初始化 Encoder 列表
 ;(() => {
   const $encoderList = document.querySelector<HTMLSelectElement>('.encoder-list')!
