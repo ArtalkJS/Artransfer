@@ -1,4 +1,5 @@
 import { ArtranFormat, Encoder } from '../common'
+import { TryConvertLineJsonToArr } from '../tools'
 
 interface TwikooFormat {
   _id: string
@@ -26,7 +27,15 @@ class TwikooEncoder extends Encoder<TwikooEncoderOpts> {
   srcList!: TwikooFormat[]
 
   public encode(src: string) {
-    this.srcList = JSON.parse(src)
+    let jsonArr: TwikooFormat[] = []
+    try {
+      jsonArr = JSON.parse(src)
+    } catch (err) {
+      jsonArr = TryConvertLineJsonToArr(src)
+    }
+
+    this.srcList = jsonArr
+
     return this
   }
 
