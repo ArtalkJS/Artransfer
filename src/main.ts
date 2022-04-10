@@ -1,12 +1,13 @@
-import CommentoEncoder from './encoder/CommentoEncoder'
-import DisqusEncoder from './encoder/DisqusEncoder'
-import TwikooEncoder from './encoder/TwikooEncoder'
-import ValineEncoder from './encoder/ValineEncoder'
 import WordPressEncoder from './encoder/WordPressEncoder'
+import ValineEncoder from './encoder/ValineEncoder'
+import DisqusEncoder from './encoder/DisqusEncoder'
+import CommentoEncoder from './encoder/CommentoEncoder'
+import TwikooEncoder from './encoder/TwikooEncoder'
+import ArtralkV1Encoder from './encoder/ArtralkV1Encoder'
 
 export default {
   encoders: {
-    CommentoEncoder, DisqusEncoder, TwikooEncoder,
-    ValineEncoder, WordPressEncoder,
+    WordPressEncoder, ValineEncoder, DisqusEncoder,
+    CommentoEncoder, TwikooEncoder, ArtralkV1Encoder
   }
 }
