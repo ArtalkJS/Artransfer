@@ -15,3 +15,9 @@ export function ConvertToAtkEmoticon(content: string) {
     .replace(/(<img[^>]*)(class=['"]vemoji['"])/ig, '$1atk-emoticon') // class="vemoji"
     .replace(/(<img[^>]*)(class=['"]tk-owo-emotion['"])/ig, '$1atk-emoticon') // class="tk-owo-emotion"
 }
+
+export function RemoveAtTag(content: string) {
+  return content
+    .replace(/<a\s+(?:[^>]*?\s+)?href="#([a-zA-Z0-9]+)?"[^>]*>@(.*?)<\/a>(: | , )?/ig, '')
+    .replace(/\[@(.*?)\]\(#[a-zA-Z0-9]+?\)(: | , )?/ig, '')
+}

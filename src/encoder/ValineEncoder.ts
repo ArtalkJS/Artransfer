@@ -32,6 +32,7 @@ class ValineEncoder extends Encoder<ValineEncoderOpts> {
     const destList: ArtranFormat[] = []
 
     this.srcList.forEach((v) => {
+      v.comment = Tools.RemoveAtTag(v.comment)
       v.comment = Tools.ConvertToAtkEmoticon(v.comment)
 
       const a: ArtranFormat = {

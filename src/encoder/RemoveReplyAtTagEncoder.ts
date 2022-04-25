@@ -17,9 +17,8 @@ class RemoveReplyAtTagEncoder extends Encoder<RemoveReplyAtTagOpts> {
     const destList: ArtranFormat[] = []
 
     this.srcList.forEach((c) => {
-      c.content = c.content.replace(/<a\s+(?:[^>]*?\s+)?href="#([a-zA-Z0-9]+)?"[^>]*>@(.*?)<\/a>(: )?/ig, '')
-        .replace(/\[@(.*?)\]\(#[a-zA-Z0-9]+?\)(: )?/ig, '')
       c.content = Tools.ConvertToAtkEmoticon(c.content)
+      c.content = Tools.RemoveAtTag(c.content)
 
       destList.push(c)
     })
