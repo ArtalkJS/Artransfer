@@ -1,4 +1,5 @@
 import { ArtranFormat, Encoder } from '../common'
+import * as Tools from '../tools'
 
 interface RemoveReplyAtTagOpts {}
 
@@ -18,6 +19,7 @@ class RemoveReplyAtTagEncoder extends Encoder<RemoveReplyAtTagOpts> {
     this.srcList.forEach((c) => {
       c.content = c.content.replace(/<a\s+(?:[^>]*?\s+)?href="#([a-zA-Z0-9]+)?"[^>]*>@(.*?)<\/a>(: )?/ig, '')
         .replace(/\[@(.*?)\]\(#[a-zA-Z0-9]+?\)(: )?/ig, '')
+      c.content = Tools.ConvertToAtkEmoticon(c.content)
 
       destList.push(c)
     })

@@ -9,3 +9,9 @@ export function TryConvertLineJsonToArr(str: string) {
   })
   return arrTmp
 }
+
+export function ConvertToAtkEmoticon(content: string) {
+  return content
+    .replace(/(<img[^>]*)(class=['"]vemoji['"])/ig, '$1atk-emoticon') // class="vemoji"
+    .replace(/(<img[^>]*)(class=['"]tk-owo-emotion['"])/ig, '$1atk-emoticon') // class="tk-owo-emotion"
+}

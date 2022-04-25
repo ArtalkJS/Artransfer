@@ -1,4 +1,5 @@
 import { ArtranFormat, Encoder } from '../common'
+import * as Tools from '../tools'
 
 interface ValineFormat {
   objectId: string
@@ -31,6 +32,8 @@ class ValineEncoder extends Encoder<ValineEncoderOpts> {
     const destList: ArtranFormat[] = []
 
     this.srcList.forEach((v) => {
+      v.comment = Tools.ConvertToAtkEmoticon(v.comment)
+
       const a: ArtranFormat = {
         id: v.objectId,
         rid: v.rid,
