@@ -36,7 +36,7 @@ class ValineEncoder extends Encoder<ValineEncoderOpts> {
       v.comment = Tools.ConvertToAtkEmoticon(v.comment)
 
       const a: ArtranFormat = {
-        id: v.objectId,
+        id: Tools.GetCorrectID(v.objectId),
         rid: v.rid,
         content: v.comment,
         ua: v.ua,

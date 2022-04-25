@@ -49,7 +49,7 @@ class TwikooEncoder extends Encoder<TwikooEncoderOpts> {
       tc.comment = Tools.ConvertToAtkEmoticon(tc.comment)
 
       const a: ArtranFormat = {
-        id: tc._id,
+        id: Tools.GetCorrectID(tc._id),
         rid: tc.rid,
         content: tc.comment,
         ua: tc.ua,

@@ -70,4 +70,16 @@
 	"email": "6@9i3.cn",
 	"link": "https://xn--qpru0x.cn/",
 	"page_key": "/post/1"
+}, {
+	"id": "219f3d980a64d8bf3b052149d8b85919",
+	"content": "测试特殊 _id 的情况",
+	"ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36",
+	"ip": "125.79.130.10",
+	"is_collapsed": false,
+	"created_at": "2021-04-10T14:35:49.000Z",
+	"updated_at": "2021-04-10T14:35:49.000Z",
+	"nick": "inkss",
+	"email": "6@9i3.cn",
+	"link": "https://xn--qpru0x.cn/",
+	"page_key": "/post/1"
 }]

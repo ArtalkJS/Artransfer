@@ -10,6 +10,14 @@ export function TryConvertLineJsonToArr(str: string) {
   return arrTmp
 }
 
+export function GetCorrectID(id: any) {
+  if (typeof id == "object" && Object.hasOwn(id, "$oid")) {
+    return id["$oid"]
+  }
+
+  return id
+}
+
 export function ConvertToAtkEmoticon(content: string) {
   return content
     .replace(/(<img[^>]*)(class=['"]vemoji['"])/ig, '$1atk-emoticon') // class="vemoji"

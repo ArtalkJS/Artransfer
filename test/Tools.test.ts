@@ -64,4 +64,12 @@ describe('Tools', () => {
       expect(result).equal(item[1])
     })
   })
+
+  it("GetCorrectID", () => {
+    expect(Tools.GetCorrectID({"$oid":"abcdefg"})).equal("abcdefg")
+
+    // 测试不影响原来的
+    expect(Tools.GetCorrectID({"not_oid":"abcdefg"})).toMatchObject({"not_oid":"abcdefg"})
+    expect(Tools.GetCorrectID("abcdefg")).equal("abcdefg")
+  })
 })
