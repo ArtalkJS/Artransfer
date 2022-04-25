@@ -18,7 +18,7 @@ import Artransfer from '../main'
   Object.entries(Artransfer.encoders).forEach(([name, encoder]) => {
     const $option = document.createElement('option')
     $option.value = name
-    $option.innerText = name.replace(/Encoder$/, '')
+    $option.innerText = encoder.DisplayName || name.replace(/Encoder$/, '')
     $encoderList.append($option)
   })
 })();

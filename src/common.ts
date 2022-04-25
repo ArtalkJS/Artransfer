@@ -3,6 +3,7 @@ export abstract class Encoder<T> {
   public constructor(opts?: T) {
     this.opts = { ...this.opts, ...opts }
   }
+  public static DisplayName = ""
   public abstract encode(src: string): Encoder<T>
   public abstract toArtrans(): ArtranFormat[]
 }
