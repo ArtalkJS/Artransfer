@@ -46,6 +46,7 @@ class TwikooEncoder extends Encoder<TwikooEncoderOpts> {
     // @see https://github.com/imaegoo/twikoo/blob/c528c94105449c6b10c63bded6f813ceaee4bf74/src/vercel/api/index.js#L1155
 	  // rid 对应 _id @see https://github.com/imaegoo/twikoo/blob/c528c94105449c6b10c63bded6f813ceaee4bf74/src/vercel/api/index.js#L343
     this.srcList.forEach((tc) => {
+      tc.comment = Tools.RemoveAtTag(tc.comment)
       tc.comment = Tools.ConvertToAtkEmoticon(tc.comment)
 
       const a: ArtranFormat = {
