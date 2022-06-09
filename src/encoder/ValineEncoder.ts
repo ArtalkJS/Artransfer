@@ -24,7 +24,15 @@ class ValineEncoder extends Encoder<ValineEncoderOpts> {
   srcList!: ValineFormat[]
 
   public encode(src: string) {
-    this.srcList = JSON.parse(src)
+    let jsonArr: ValineFormat[] = []
+    try {
+      jsonArr = JSON.parse(src)
+    } catch (err) {
+      jsonArr = Tools.TryConvertLineJsonToArr(src)
+    }
+
+    this.srcList = jsonArr
+
     return this
   }
 
