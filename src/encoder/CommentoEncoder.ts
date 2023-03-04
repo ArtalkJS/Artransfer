@@ -35,7 +35,7 @@ class CommentoEncoder extends Encoder<CommentoEncoderOpts> {
     const destList: ArtranFormat[] = []
 
     this.comments.forEach((c) => {
-      let commenter = this.commenters.find(o => o.commenterHex == c.commentHex)
+      let commenter = this.commenters.find(o => o.commenterHex == c.commenterHex)
       if (!commenter) {
         commenter = { commenterHex: c.commentHex, name: '', email: '', link: '' }
       }
