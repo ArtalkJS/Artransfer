@@ -24,6 +24,7 @@ class WordPressEncoder extends Encoder<WordPressEncoderOpts> {
 
     this.pages.forEach((page) => {
       if (!page.comment) return
+      if (!Array.isArray(page.comment)) page.comment = [page.comment]
 
       page.comment.forEach((w) => {
         const a: ArtranFormat = {
